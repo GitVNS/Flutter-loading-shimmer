@@ -51,16 +51,21 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         animation: _animationController,
         builder: (context, _) {
           return SingleChildScrollView(
-            child: Column(
-              children: [
-                const SizedBox(height: 5),
-                buildTextPostCard(
-                    const Color(0xffcce6f4).withOpacity(_effect.value)),
-                buildImagePostCard(
-                    const Color(0xffcce6f4).withOpacity(_effect.value)),
-                buildTextPostCard(
-                    const Color(0xffcce6f4).withOpacity(_effect.value)),
-              ],
+            physics: const BouncingScrollPhysics(),
+            child: SafeArea(
+              child: Column(
+                children: [
+                  const SizedBox(height: 5),
+                  buildTextPostCard(
+                      const Color(0xffcce6f4).withOpacity(_effect.value)),
+                  buildImagePostCard(
+                      const Color(0xffcce6f4).withOpacity(_effect.value)),
+                  buildTextPostCard(
+                      const Color(0xffcce6f4).withOpacity(_effect.value)),
+                  buildImagePostCard(
+                      const Color(0xffcce6f4).withOpacity(_effect.value)),
+                ],
+              ),
             ),
           );
         },
