@@ -1,3 +1,5 @@
-# linkedin_shimmer
+# Loading Shimmer
 
-A new Flutter project.
+A LinkedIn app style loading shimmer in Flutter.
+
+![](https://github.com/GitVNS/Flutter-loading-shimmer/blob/main/sample/sample.gif)
